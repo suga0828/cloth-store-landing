@@ -1,0 +1,10 @@
+#products {
+	grid-template-columns: 320px;
+	grid-gap: 15px 10.7px;
+}
+.subtittle {
+	font-size: 13vmin;
+}
+.subtittle-description {
+	font-size: 4vmin;
+}

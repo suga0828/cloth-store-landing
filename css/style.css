@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed:300');
+/*
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+/*
+===================
+HTML default styles
+===================
+*/
+
+html, body {padding:0;border:0;margin:0;font-family:'Montserrat',sans-serif;}
+a{text-decoration:none;cursor:pointer;color:inherit;}
+h1, h2, h3 {text-transform:uppercase;margin:0;}
+p {margin: 0;}
+
+/*
+======
+Header
+======
+*/
+
+header
+{
+	display: grid;
+	grid-template-columns: repeat(5, 125px) 1fr;
+	background-color: black;
+	color: whitesmoke;
+	text-transform: uppercase;
+	height: 70px;
+	padding: 0px 45px 0px 60px;
+	grid-gap: 10px;
+	align-items: center;
+	justify-items: center;
+}
+
+header > a:nth-child(1),
+header > a:hover,
+header > a:active {color:#FD7676;}
+
+.search-button
+{
+	background-color: whitesmoke;
+	color: grey;
+	border-radius: 7px;
+	padding: 4px 30px;
+	font-size: 1em;
+	display: inline-block;
+	justify-self: end;
+	text-transform: none;
+	text-align: center;
+}
+
+.search-img
+{
+	width: 15px;
+	height: auto;
+}
+
+/*
+================
+Banner container
+================
+*/
+
+.banner
+{
+	background-image: url(../images/bitmap-banner.png);
+	background-size: cover;
+	background-position: center;
+	height: 67vh;
+	width: 100%;
+	display: grid;
+	align-items: center;
+}
+
+.tittle
+{
+	font-size: 4.5vmax;
+	background-color: white;
+	margin: .05em 0px;
+	padding: 0em 1em;
+	display: inline-block;
+	letter-spacing: 2px;
+}
+
+/*
+===================
+Subtittle container
+===================
+*/
+
+.subtittles
+{
+	text-align: center;
+	padding: 25px;
+	letter-spacing: 10px
+}
+
+.subtittle
+{
+	font-weight: 100;
+	font-size: 5em;
+}
+
+/*
+==================
+Products container
+==================
+*/
+
+#products
+{
+	display: grid;
+	grid-template-columns: repeat(3, minmax(180px, 350px));
+	justify-content: center;
+	align-content: space-between;
+	grid-gap: 70px 50px;
+	padding: 25px 0px 50px 0px;
+}
+
+.product
+{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	justify-items: center;
+	align-items: center;
+	font-size: 21px;
+
+}
+
+.product-img
+{
+	grid-column: span 6;
+	width: 100%;
+}
+
+.text {
+	padding: 10px 0px;
+}
+
+.bold {
+	grid-column: span 5;
+	font-weight: bold;
+}
+
+.product-description {
+	font-size: .9em;
+	grid-column: span 4;
+}
+
+
+.border-bottom {
+	width: 100%;
+	background-color: black;
+	height: 1px; 
+	grid-column: span 6;
+}
+
+.size
+{
+	background-color: black;
+	color: white;
+	border-radius: 50%;
+	padding: 10px;
+	font-size: 1em;
+}
+
+.price
+{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1.5em;
+	letter-spacing: -2px;
+	grid-column: span 2;
+	font-weight: lighter;;
+}
+
+.user-img
+{
+	background-image: url(../images/profile.png);
+	border-radius: 50%;
+	max-width: 20%;
+	grid-column: span 6;
+}
+
+
+/*
+=============
+Helpers class
+=============
+*/
+
+.pink
+{
+	color: #FD7676;
+}

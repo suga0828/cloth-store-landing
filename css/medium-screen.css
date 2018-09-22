@@ -1,0 +1,2 @@
+#products {
+	grid-template-columns: repeat(2, minmax(150px, 320px));
