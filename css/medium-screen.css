@@ -1,2 +1,9 @@
-#products {
-	grid-template-columns: repeat(2, minmax(150px, 320px));
+#products
+{
+	grid-template-columns: repeat(2, minmax(270px, 300px) );
+	grid-gap: 60px 30px;
+}
+.search-button
+{
+	display: none;
+}

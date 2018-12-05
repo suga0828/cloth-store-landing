@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto:100');
 /*
-font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto', sans-serif;
 font-family: 'Montserrat', sans-serif;
 */
 
@@ -10,10 +10,28 @@ HTML default styles
 ===================
 */
 
-html, body {padding:0;border:0;margin:0;font-family:'Montserrat',sans-serif;}
-a{text-decoration:none;cursor:pointer;color:inherit;}
-h1, h2, h3 {text-transform:uppercase;margin:0;}
-p {margin: 0;}
+html, body
+{
+	padding:0;
+	border:0;
+	margin:0;
+	font-family:'Montserrat',sans-serif;
+}
+a
+{
+	text-decoration:none;
+	cursor:pointer;
+	color:inherit;
+}
+h1, h2, h3
+{
+	text-transform:uppercase;
+	margin:0;
+}
+p
+{
+	margin: 0;
+}
 
 /*
 ======
@@ -24,37 +42,39 @@ Header
 header
 {
 	display: grid;
-	grid-template-columns: repeat(5, 125px) 1fr;
+	grid-template-columns: repeat(5, auto) 1fr;
 	background-color: black;
 	color: whitesmoke;
 	text-transform: uppercase;
-	height: 70px;
-	padding: 0px 45px 0px 60px;
-	grid-gap: 10px;
+	font-size: .9em;
+	height: 74px;
+	padding: 0px 50px 0px 84px;
+	grid-gap: 36px;
 	align-items: center;
 	justify-items: center;
 }
-
 header > a:nth-child(1),
 header > a:hover,
-header > a:active {color:#FD7676;}
-
+header > a:active
+{
+	color:#FD7676;
+	font-weight: bold;
+}
 .search-button
 {
 	background-color: whitesmoke;
 	color: grey;
 	border-radius: 7px;
-	padding: 4px 30px;
-	font-size: 1em;
+	padding: 6px 12px;
+	font-size: .75em;
 	display: inline-block;
 	justify-self: end;
 	text-transform: none;
 	text-align: center;
 }
-
 .search-img
 {
-	width: 15px;
+	width: 14px;
 	height: auto;
 }
 
@@ -74,8 +94,7 @@ Banner container
 	display: grid;
 	align-items: center;
 }
-
-.tittle
+.title
 {
 	font-size: 4.5vmax;
 	background-color: white;
@@ -87,21 +106,24 @@ Banner container
 
 /*
 ===================
-Subtittle container
+Subtitle container
 ===================
 */
 
-.subtittles
+.subtitles
 {
 	text-align: center;
 	padding: 25px;
-	letter-spacing: 10px
+	letter-spacing: 7px;
 }
-
-.subtittle
+.subtitle
 {
 	font-weight: 100;
-	font-size: 5em;
+	font-size: 4.6em;
+}
+.subtitle-description
+{
+	font-family: 'Roboto', sans-serif; 
 }
 
 /*
@@ -113,13 +135,12 @@ Products container
 #products
 {
 	display: grid;
-	grid-template-columns: repeat(3, minmax(180px, 350px));
+	grid-template-columns: repeat(3, minmax(270px, 300px));
 	justify-content: center;
 	align-content: space-between;
-	grid-gap: 70px 50px;
-	padding: 25px 0px 50px 0px;
+	grid-gap: 100px 67px;
+	padding: 25px 15px 50px 15px;
 }
-
 .product
 {
 	display: grid;
@@ -127,63 +148,57 @@ Products container
 	justify-items: center;
 	align-items: center;
 	font-size: 21px;
-
 }
-
 .product-img
 {
 	grid-column: span 6;
 	width: 100%;
 }
-
-.text {
-	padding: 10px 0px;
-}
-
-.bold {
+.product-title
+{
 	grid-column: span 5;
 	font-weight: bold;
-}
-
-.product-description {
 	font-size: .9em;
-	grid-column: span 4;
+	padding: 17px 0px;
 }
-
-
-.border-bottom {
+.product-description
+{
+	font-size: .8em;
+	grid-column: span 4;
+	padding: 12px 0px;
+}
+.border-bottom
+{
 	width: 100%;
 	background-color: black;
 	height: 1px; 
 	grid-column: span 6;
 }
-
 .size
 {
 	background-color: black;
+	text-transform: uppercase;
 	color: white;
 	border-radius: 50%;
 	padding: 10px;
 	font-size: 1em;
 }
-
 .price
 {
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1.5em;
 	letter-spacing: -2px;
 	grid-column: span 2;
 	font-weight: lighter;;
 }
-
 .user-img
 {
 	background-image: url(../images/profile.png);
 	border-radius: 50%;
-	max-width: 20%;
+	max-width: 18%;
 	grid-column: span 6;
+	margin: 8px 0px;
 }
-
 
 /*
 =============
@@ -194,4 +209,17 @@ Helpers class
 .pink
 {
 	color: #FD7676;
+}
+.hidden
+{
+	color: transparent;
+}
+.menu
+{
+	justify-self: right;
+	display: none;
+	padding: 5px;
+	border-radius: 2px;
+	border: 1px solid #FD7676; 
+
 }

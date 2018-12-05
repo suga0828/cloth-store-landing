@@ -1,10 +1,26 @@
-#products {
-	grid-template-columns: 320px;
-	grid-gap: 15px 10.7px;
+header
+{
+	grid-template-columns: 1fr;
 }
-.subtittle {
+.search-button,
+.navbar-item
+{
+	display:none;
+}
+.menu
+{
+	display: block;
+}
+.subtittle
+{
 	font-size: 13vmin;
 }
-.subtittle-description {
+.subtittle-description
+{
 	font-size: 4vmin;
+}
+#products
+{
+	grid-template-columns: 300px;
+	grid-gap: 30px;
 }
