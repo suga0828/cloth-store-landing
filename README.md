@@ -1,4 +1,4 @@
-# Aguayo-landing
+# Cloth-store-landing
 
 ## English
 Responsive Landing Page created using Vanilla CSS (just CSS, no framework). An example of the usefull of CSS Grid Layout.
